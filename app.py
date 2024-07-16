@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
 # Load data
-data = pd.read_csv(r"C:\Users\nadav\PycharmProjects\visualization2\speed_data_data.csv")
+data = pd.read_csv('./speed_data_data.csv')
 data.dropna(subset=['attr', 'dec'], inplace=True)
 
 # Assuming and 'career' are categorical, you might use mode (most frequent)
